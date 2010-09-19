@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cppdepinject">
+      <UniqueIdentifier>{76395482-ee17-4326-9981-f7419900090f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{b56dafbf-1fac-4856-9976-92ed0d65b2cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cppdepinject\Repository.inc.h">
+      <Filter>cppdepinject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cppdepinject\Repository.h">
+      <Filter>cppdepinject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\test\CppInjectTest.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\test\cppdepinject-test.cpp" />
+    <ClCompile Include="..\test\CppInjectTest.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
