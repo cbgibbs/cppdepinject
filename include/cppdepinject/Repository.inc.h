@@ -208,7 +208,7 @@ inline Repository::Registered::TByName& Repository::Registered::all()
 {
 	auto p = registered.find(impl::Type(typeid(T)));
 	if (p == registered.end())
-		p = registered.insert(TByType::value_type(typeid(T), std::shared_ptr<TByName>(new TByName))).first;
+		p = registered.insert(TByType::value_type(impl::Type(typeid(T)), std::shared_ptr<TByName>(new TByName))).first;
 	return *p->second;
 }
 
